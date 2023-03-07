@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/031e4994d8.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .nav_sect{
+            background-color:rgb(113, 162, 70);
+            position: fixed;
+            top:0;
+            width: 100%;
+            z-index: 2;
+            
+        }
+        .nav_sect img{
+            max-width: 5%;
+        }
+        .nav_sect nav{
+            float:right;
+
+        
+        }
+        .nav_sect nav ul{
+            margin-top: 30px;
+        }
+        .nav_sect nav ul li{
+            display:inline;
+            list-style: none;
+            margin: 10px 20px;
+        
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .header_sect{
+            top:50px;
+            position: relative;
+            
+            
+        }
+        .header_sect img{
+            width: 100%;
+            
+            
+        }
+        .header_sect .text_sect{
+            position: absolute;
+            left:25%;
+            top:50%;
+            text-align: center;
+            color:black;
+            margin: auto;
+            
+
+            
+        }
+        .header_sect .text_sect h2{
+            font-weight: bold;
+            font-size: 250%;
+            
+        }
+        .header_sect .text_sect span{
+            font-size: 20px;
+            text-align: center;
+
+        }
+        
+        /*.header_sect{
+            margin-top: 300px;
+            margin-bottom: 200px;
+            margin-left: 150px;
+            margin-right: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(image2.webp);
+            width: 100%;
+        }
+        .text_sect{
+            color: aquamarine;
+            text-align: center;
+        }*/
+        
+        .img1 img{
+        margin-top: 80px;
+        
+        width: 70%;
+        height: 500px;
+        
+        
+            
+        }
+        .img1{
+            position: relative;
+            margin-top: 200px;
+            
+        }
+        .img1 .img2{
+            background-color: black;
+            opacity: 0.8;
+            color: white;
+            min-height: 50%;
+            width: 75%;
+            position: absolute;
+            top:30%;
+            left:30%;
+            padding:50px;
+            
+            
+        }
+       .img1 .img2 h2{
+        margin-bottom: 10px;
+        text-align: center;
+       }
+       .img2 span{
+        margin-top: 30px;
+        text-align: center;
+       
+       }
+       
+       .img1 .img2 .btn{
+        background-color: black;
+        
+        color: white;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 5px;
+        padding:8px;
+        position: absolute;
+        left:50%;
+        margin-top: 10px;
+       }
+       .img1 .img2 .btn:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+       }
+       .img2 span{
+        text-align: center;
+       }
+       .flexbox_container{
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+       }
+       .flexbox_item{
+            width:200px;
+            height: 150px;
+            margin:10px;
+            
+            
+       }
+       
+       .flexbox_container .flexbox_item img{
+        height: 250px;
+        width: 250px;
+       
+       }
+       .flexbox_container .flexbox_item {
+        text-align: center;
+       }
+       .footer{
+        background-color: black;
+        width: 100%;
+        height: 200px;
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        padding: 30px;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .footer .column ul {
+        list-style-type: none;
+       }
+       .footer .column h4{
+        font-size:20px;
+        margin-bottom: 20px;
+       }
+       .footer .column ul li a{
+        text-decoration: none;
+        color: antiquewhite;
+       }
+       .footer .column i{
+        display: block;
+        padding-bottom: 10px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="nav_sect">
+        <img src="65f2a165e3d4f4b4a5f908f56728eb75-removebg-preview.png">    
+        <nav>
+        <ul>
+            
+            <li><a href="#1">HOME</a></li>
+            <li><a href="#2">ABOUT</a></li>
+            <li><a href="#3">SERVICES</a></li>
+            <li><a href="#4">MY WORK</a></li>
+            <li><a href="#5">CONTACT</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="header_sect">
+        <img src="bg4.jpg" alt="">
+        <div class="text_sect">
+            <h2>Hello, I am Rejoice Njoki</h2>
+            <span>I use HTML and CSS to convert webpage designs into beautiful and efficient websites</span>
+            
+        </div>
+    </div>
+    <div class="flexbox_container">
+        <div class="flexbox_item flexbox_item_1">
+            <img src="imageweb.webp"><br>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro obcaecati a quam quo fugiat commodi laboriosam rem veritatis magni nesciunt.</span>
+        </div>
+        <div class="flexbox_item flexbox_item_2">
+            <img src="imageweb3.webp"><br>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro obcaecati a quam quo fugiat commodi laboriosam rem veritatis magni nesciunt.</span>
+        </div>
+        <div class="flexbox_item flexbox_item_3">
+            <img src="imageweb3.webp"><br>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro obcaecati a quam quo fugiat commodi laboriosam rem veritatis magni nesciunt.</span</div>
+    </div>
+    <div class="img1">
+        <img src="image4.jpeg">
+        <div class="img2">
+            <h2>My Skills</h2><br>
+            <ol class="list">
+                <li>HTML- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nemo.</li><br>
+                <li>CSS-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, nobis.</li><br>
+                <li>JavaScript-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, atque.</li><br>
+            </ol>
+            <span>Web Developer who writes clean, elegant and efficient code</span><br>
+            <button class="btn">Learn More</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="column">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Experiece</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Experiece</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Experiece</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Follow Me</h4>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+    </div>
+        
+</body>
+</html>
