@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myform{
+            background-color: plum;
+            margin: 100px;
+            padding: 150px;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="myform" class="myform">
+        <h3>My form</h3>
+        <label name="firstname" >First Name:</label>
+        <input type="text" id="first" name="first"><br><br>
+        <label name="lastname">Last Name:</label>
+        <input type="text" id="last" name="last"><br><br>
+        <label name="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" id="submit">
+        <p id="output"></p>
+    </form>
+    
+
+<!-- <script>
+    document.getElementById("myform").addEventListener("submit",
+    function(e){
+        e.preventDefault()
+        console.log(e)
+    }
+    )
+</script> -->
+
+<script>
+    
+    document.getElementById("myform").addEventListener("submit",
+    function(getdata){
+        getdata.preventDefault()
+       let fname=document.getElementById("first").value
+       let lname=document.getElementById("last").value
+       let email=document.getElementById("email").value
+       document.getElementById("output").innerHTML=fname + " " + lname + " " + email
+    }
+    )
+    
+</script>
+   <!-- <script>
+    function test(x,y,z){
+        let total=x+y+z
+        alert(total)
+    }
+    test(20,60,40)
+   </script> -->
+</body>
+</html>
