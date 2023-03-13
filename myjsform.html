@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .myform{
+        .main{
             background-color: plum;
             margin: 100px;
             padding: 150px;
             height: 100vh;
             text-align: center;
+            
         }
+        .main th{
+            padding: 0 20px 0 20px;
+            text-align: center;
+            border-style: solid;
+            font-family: cursive;
+        }
+        .main table{
+            width: 50%;
+            margin: auto;
+            background-color: aliceblue;
+            border-collapse: collapse;   
+        }
+        .main tr, td{
+            border-style: solid;
+        }
+        .myform{
+            font-weight: 700;
+            font-family: cursive;
+        } 
     </style>
 </head>
 <body>
+    <div class="main">
     <form id="myform" class="myform">
         <h3>My form</h3>
         <label name="firstname" >First Name:</label>
@@ -25,32 +46,49 @@
         <label name="email">Email:</label>
         <input type="email" id="email" name="email"><br><br>
         <input type="submit" id="submit">
-        <p id="output"></p>
-    </form>
+    </form><br>
+        <table id="form_details">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </table>
+        </div>
+   
+    <script type="text/javascript" src="myjsform.js"></script>
     
-
 <!-- <script>
-    document.getElementById("myform").addEventListener("submit",
-    function(e){
-        e.preventDefault()
-        console.log(e)
+    function formdata(){
+    formdata.preventDefault()
+    let fname=document.getElementById("first").value
+    let lname=document.getElementById("last").value
+    let email=document.getElementById("email").value
+    document.getElementById("form").innerHTML=fname+lname+email
     }
-    )
+    
 </script> -->
 
-<script>
+
+<!-- <script>
     
+    function process_form_data(m)
+    {
+        let formdata=new FormData(m)
+        let myvalues=formdata.entries()
+        for (let value of myvalues){
+            console.log(value[1])
+            
+        }
+    }
+
     document.getElementById("myform").addEventListener("submit",
-    function(getdata){
-        getdata.preventDefault()
-       let fname=document.getElementById("first").value
-       let lname=document.getElementById("last").value
-       let email=document.getElementById("email").value
-       document.getElementById("output").innerHTML=fname + " " + lname + " " + email
+    function(my_submitted_form){
+        my_submitted_form.preventDefault()
+        process_form_data(my_submitted_form.target)
     }
     )
-    
-</script>
+</script>  -->
    <!-- <script>
     function test(x,y,z){
         let total=x+y+z
